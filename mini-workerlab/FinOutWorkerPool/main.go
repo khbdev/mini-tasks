@@ -11,6 +11,7 @@ var (
 )
 
 
+
 func worker(id int, jobs <- chan int, results chan <- int, wg *sync.WaitGroup){
 	defer wg.Done()
 	mu.Lock()
